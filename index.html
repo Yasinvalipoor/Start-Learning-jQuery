@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn jQuery - Part 1</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <script src="jquery-3.7.1.js"></script>
 
-
     <script>
-        $("document").ready(
-            function () {
+        $("document").ready(function () {
+            $("#content").append("<p>Hello</p>");
+            // $("#content").css("color","green");
 
-                $("#content").append("<p>Hello</p>");
-                // $("#content").css("color","green");
+            // $("p").css("background-color","red");
+            // $(".selector").css("background-color","green");
+            // $(".filter").css("background-color","purple");
 
-                // $("p").css("background-color","red");
-                // $(".selector").css("background-color","green");
-                // $(".filter").css("background-color","purple");
-                
-                $("p:first").css("background-color","lightblue");
-                $("p:last").css("background-color","darkblue");
-                $("p:last").css("color","white");
+            $("p:first").css("background-color", "lightblue");
+            $("p:last").css("background-color", "darkblue");
+            $("p:last").css("color", "white");
 
-                $("h2:not(.effect,.filter)").css("border","3px solid red");
-                $("h2:not(.selector,.state)").css("border","3px solid lightgreen");
-    
-                var newElementP = $("<p>")
-                    newElementP.append("<h3>I'm In Box With jQuery</h3>")
-                    newElementP.css("text-align","center");
-                $("#box").html(newElementP)
-                
-                
-            }
-        )
+            $("h2:not(.effect,.filter)").css("border", "3px solid red");
+            $("h2:not(.selector,.state)").css("border", "3px solid lightgreen");
+
+            var newElementH3 = $("<h3>");
+            newElementH3.append("<em>I'm In Box With jQuery</em>");
+            newElementH3.css("text-align", "center");
+            // Html Vs Text Method
+            $("#box").html(newElementH3); // Read Tag Element
+            // $("#box").text("<em>I'm In Box With jQuery</em>"); // Just Read Text
+
+            $("#intro").prepend("(Prepend Text) <code style='font-size:20px;'>$('intro').prepend</code> -- ");
+        });
     </script>
 </head>
+
 <body>
     <div id="content">
         <h1 id="intro">Introduction jquery</h1>
         <p>Hi jQuery</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ad magni molestias nobis nisi, deleniti quae repudiandae quasi accusantium veritatis a suscipit fugiat blanditiis exercitationem voluptatibus velit sit aperiam. Aperiam.</p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ad magni
+            molestias nobis nisi, deleniti quae repudiandae quasi accusantium
+            veritatis a suscipit fugiat blanditiis exercitationem voluptatibus velit
+            sit aperiam. Aperiam.
+        </p>
 
         <h2 class="selector">Select me</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus odit quidem at</p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus
+            odit quidem at
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, qui?</p>
 
         <h2 class="filter">Filters</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus odit quidem at</p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus
+            odit quidem at
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, qui?</p>
 
         <h2 class="effect">Effect</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus odit quidem at</p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus
+            odit quidem at
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, qui?</p>
 
         <h2 class="state">State</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus odit quidem at</p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam delectus
+            odit quidem at
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, qui?</p>
     </div>
 
     <div id="box"></div>
 </body>
+
 </html>
