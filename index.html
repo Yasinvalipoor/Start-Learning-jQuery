@@ -34,6 +34,23 @@
             // $("#box").text("<em>I'm In Box With jQuery</em>"); // Just Read Text
 
             $("#intro").prepend("(Prepend Text) <code style='font-size:20px;'>$('intro').prepend</code> -- ");
+
+            // Events
+            // One Click
+            $("#clickMe").click(
+                function(){
+                    // $(this).hide();
+                    $(this).css("background-color", "red");
+                }
+            );
+
+            // Double Click
+            $("#clickMe").dblclick(
+                function(){
+                    // $(this).hide();
+                    $(this).css("background-color", "rgb(54, 151, 119)");
+                }
+            );
         });
     </script>
 </head>
@@ -78,7 +95,11 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, qui?</p>
     </div>
 
-    <div id="box"></div>
+    <br>
+
+    <button id="clickMe">click Here</button>
+    <div id="box">
+    </div>
 </body>
 
 </html>

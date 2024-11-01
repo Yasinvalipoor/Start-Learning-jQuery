@@ -5,3 +5,19 @@
     margin:50px auto;
     font-size: 15pt;
 }
+
+#clickMe{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(54, 151, 119);
+    color: white;
+    font-size: 25px;
+    border: none;
+    box-shadow: 5px 2px 9px 0px grey;
+    text-shadow: 4px 1px 3px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#clickMe:hover{
+    background-color: rgba(54, 151, 119, 0.815);
+}
