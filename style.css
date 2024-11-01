@@ -1,0 +1,7 @@
+#box{
+    background-color: #cdd39c;
+    border: 10px rgb(46, 63, 139) solid;
+    min-height: 200px;
+    margin:50px auto;
+    font-size: 10pt;
+}
