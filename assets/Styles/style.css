@@ -21,3 +21,82 @@
 #clickMe:hover{
     background-color: rgba(54, 151, 119, 0.815);
 }
+
+
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+    row-gap: 20px;
+    background-color: grey;
+    
+}
+
+.square_1 {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: slateblue ;
+}
+.square_2 {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;
+
+}
+.square_3 {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+
+}
+.square_4 {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: darkmagenta;
+}
+
+.opacity{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 815px) {
+    #container{
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #container{
+        padding: 0;
+    }
+}
+
+
+
+.panel,.btn_panel{
+    background-color: cornflowerblue;
+    padding: 5px;
+    text-align: center;
+}
+.panel{
+    height: 5em;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+
+
+.card{
+    background-color: antiquewhite;
+    border: 1px solid gray;
+}

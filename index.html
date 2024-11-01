@@ -7,8 +7,9 @@
     <title>Learn jQuery - Part 1</title>
 
     <link rel="stylesheet" href="assets/Styles/style.css" />
-
     <script src="lib/jquery/jquery-3.7.1.js"></script>
+
+
 
     <script>
         $("document").ready(function () {
@@ -30,7 +31,7 @@
             newElementH3.append("<em>I'm In Box With jQuery</em>");
             newElementH3.css("text-align", "center");
             // Html Vs Text Method
-            $("#box").html(newElementH3); // Read Tag Element
+            $("#box").append(newElementH3); // Read Tag Element
             // $("#box").text("<em>I'm In Box With jQuery</em>"); // Just Read Text
 
             $("#intro").prepend("(Prepend Text) <code style='font-size:20px;'>$('intro').prepend</code> -- ");
@@ -117,7 +118,32 @@
     <br>
 
     <button id="clickMe">click Here</button>
-    <div id="box"></div>
+    <div id="box">
+        <h5 style="text-align: center;" id="showInfo">X-axis Mouse is : --- & Y-axis Mouse is : ---</h5>
+    </div>
+
+
+    <button id="click_for_fade">Fade</button>
+    <button id="click_for_opacity">opacity</button>
+    <div id="container">
+        <div class="square_1 opacity"></div>
+        <div class="square_2 opacity"></div>
+        <div class="square_3 opacity"></div>
+        <div class="square_4 opacity"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="btn_panel">Click Here For Show</div>
+    <div class="panel">Hi My Friends</div>
 
     <script src="assets/Scripts/customjs.js"></script>
 </body>
