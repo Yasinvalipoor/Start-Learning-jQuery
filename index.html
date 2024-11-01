@@ -38,7 +38,7 @@
             // Events
             // One Click
             $("#clickMe").click(
-                function(){
+                function () {
                     // $(this).hide();
                     $(this).css("background-color", "red");
                 }
@@ -46,9 +46,28 @@
 
             // Double Click
             $("#clickMe").dblclick(
-                function(){
+                function () {
                     // $(this).hide();
                     $(this).css("background-color", "rgb(54, 151, 119)");
+                }
+            );
+
+            // Mouse Events
+            $("#clickMe").mouseenter(
+                function () {
+                    // $(this).hide();
+                    $("#box").css("background-color", "rgb(54, 151, 119)");
+                }
+            );
+            $("#clickMe").mouseout(
+                function () {
+                    // $(this).hide();
+                    $("#box").css("background-color", "#cdd39c");
+                }
+            );
+            $("#box").mouseleave(
+                function () {
+                    alert("Mouse Out Of Box!");
                 }
             );
         });
